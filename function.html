@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        function AreaTriangulo() {
+            let h = parseFloat(prompt("Digite a altura"))
+            let b = parseFloat(prompt("Digite a Base"))
+            let area = (b * h) / 2
+            window.alert(`A área do triângulo é ${area}`)
+        }
+    
+
+        function AreaQuadrado() {
+            let L = parseFloat(prompt("Digite o lado"))
+            let area = L * L;
+            window.alert(`A área do quadrado é ${area}`)
+        }
+       
+
+        function AreaRetangulo() {
+            let h = parseFloat(prompt("Digite a altura"))
+            let b = parseFloat(prompt("Digite a Base"))
+            let area = (b * h)
+            window.alert(`A área do retângulo é ${area} `)
+        }
+        
+
+        function AreaTrapezio() {
+            let bma = parseFloat(prompt("Digite a Base Maior"))
+            let bme = parseFloat(prompt("Digite a Base Menor"))
+            let h = parseFloat(prompt("Digite a altura"))
+            let area = ((bma + bme) / 2) * h
+            window.alert(`A área do trapézio é ${area} `)
+        }
+        
+
+        function AreaCirculo() {
+            let r = parseFloat(prompt("Digite o raio"))
+            let area = Math.PI * (r ** 2)
+            window.alert(`A área do circulo é ${area} `)
+        }
+        
+
+        let escolha = prompt("Digite a forma geométrica para que a área seja calculada")
+        switch (escolha) {
+
+            case "triangulo":
+                AreaTriangulo();
+                break;
+
+            case "quadrado":
+                AreaQuadrado();
+                break;
+
+            case "trapezio":
+                AreaTrapezio();
+                break;
+
+            case "retangulo":
+                AreaRetangulo();
+                break;
+
+            case "circulo":
+                AreaCirculo();
+                break;
+
+            default:
+                window.alert("Nao é uma forma geométrica")
+        }
+    </script>
+
+</body>
+
+</html>
