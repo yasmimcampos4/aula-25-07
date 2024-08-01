@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <form>
+
+        <h3>Número</h3>
+        <input type="number" placeholder="Informe um número" id="login">
+       
+
+        <input type="submit" onclick="Media(); return false">
+
+    
+    </form>
+
+    <script>
+        function Media() {
+            var num = parseFloat(document.getElementById("login").value)
+           
+            if ((num % 2) > 0) {
+                window.alert("Ímpar")
+            } else {
+                window.alert("Par")
+            }
+        }
+
+        function GoBack() {
+            location.href = "botoes.html"
+        }
+    </script>
+        <button onclick="GoBack()"> voltar </button>
+</body>
+
+</html>

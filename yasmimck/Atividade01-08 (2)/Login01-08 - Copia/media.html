@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <form>
+
+        <h3>N1</h3>
+        <input type="number" placeholder="Informe um número" id="login">
+        <h3>N2</h3>
+        <input type="number" placeholder="Informe outro número" id="senha">
+
+        <input type="submit" onclick="Media(); return false">
+
+
+    </form>
+
+    <script>
+        function Media() {
+            var n1 = parseFloat(document.getElementById("login").value)
+            var n2 = parseFloat(document.getElementById("senha").value)
+            var med = (n1 + n2) / 2
+            window.alert(`A média é ${med}`)
+        }
+
+        function GoBack() {
+            location.href = "botoes.html"
+        }
+    </script>
+
+    <button onclick="GoBack()"> voltar </button>
+
+</body>
+
+</html>

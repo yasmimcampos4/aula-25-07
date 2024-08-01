@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="botoes.html">
+</head>
+
+<body>
+    <form>
+
+        <h3>Ano de nascimento</h3>
+        <input type="number" placeholder="Informe um número" id="n1">
+        <h3>Ano atual</h3>
+        <input type="number" placeholder="Informe outro número" id="n2">
+        <h3>Já fez aniversário?</h3>
+        <input type="text" placeholder=" 0 = não 1 = sim" id="n3">
+
+        <input type="submit" onclick="Media(); return false">
+
+      
+    </form>
+
+    <script>
+        function Media() {
+            var n1 = parseFloat(document.getElementById("n1").value)
+            var n2 = parseFloat(document.getElementById("n2").value)
+            var n3 = document.getElementById("n3").value
+            if (n3 == 1) {
+                let idade = n2 - n1
+                window.alert(`A idade é ${idade} anos`)
+            } else {
+                let idade = n2 - n1 - 1
+                window.alert(`A idade é ${idade} anos`)
+            }
+        }
+
+        function GoBack() {
+            location.href = "botoes.html"
+        }
+    </script>
+    
+    <button onclick="GoBack()"> voltar </button>
+</body>
+
+</html>
