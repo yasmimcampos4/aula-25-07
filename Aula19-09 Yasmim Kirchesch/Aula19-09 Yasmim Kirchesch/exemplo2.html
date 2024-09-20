@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div id="dem"></div>
+    <script>
+        let texto = "";
+        const fruta = ["maca", "laranja", "cereja"];
+        fruta.forEach(myfunction);
+        document.getElementById("dem").innerHTML = texto;
+
+        function myfunction(item, index) {
+            texto += index + ":" + item + "<br>";
+        }
+    </script>
+</body>
+
+
+
+</html>
